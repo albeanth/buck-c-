@@ -1,6 +1,10 @@
 ## MacOS Specific
 .DS_Store
 
+## Buck Specific
+.buckd/
+buck-out
+
 ## C++ Specific
 # Prerequisites
 *.d
