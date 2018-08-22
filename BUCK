@@ -1,11 +1,12 @@
 cxx_binary(
   name = 'test',
-  header_namespace = 'test',
-  headers = subdir_glob([
-    ('include','**/*.h'),
-  ]),
-  srcs = glob([
-    'src/*.cpp',
-  ]),
-  preprocessor_flags = ['-std=c++11'],
+  srcs = ['MainTest.cpp'],
+  deps = [':ClassTest'],
+  preprocessor_flags = ['-std=c++11','-Wc++11-extensions'],
+)
+
+cxx_library(
+  name = 'ClassTest',
+  srcs = ['ClassTest.cpp'],
+  headers = ['ClassTest.hpp'],
 )
