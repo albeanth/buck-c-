@@ -1,4 +1,4 @@
-#include "ClassTest.hpp"
+#include <TWIGL/ClassTest.hpp>
 
 double ClassTest::sum(std::vector<double> v){
   double dummy = 0.0;
